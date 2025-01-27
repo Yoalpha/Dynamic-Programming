@@ -3,6 +3,7 @@
   <component name="Black">
     <option name="executionMode" value="BINARY" />
     <option name="pathToExecutable" value="C:\Users\yoyog\anaconda3\Scripts\black.exe" />
+    <option name="sdkName" value="Python 3.11 (Dynamic Programming) (2)" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (Dynamic Programming) (2)" project-jdk-type="Python SDK" />
 </project>
