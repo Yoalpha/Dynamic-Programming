@@ -19,13 +19,23 @@ print(gridTraveler(2, 3))
 
 memo={}
 def gridTraveler2(m, n):
+    #createing a key
     key = str(m) + ',' + str(n)
+
+    #checking if the key is in memo, if it is return the computed value for that key
     if key in memo:
         return memo[key]
+
+    #base case 1, as if the grid is one by one, there is one possible solution
     if m == 1 and n == 1:
         return 1
+
+    #base case 2, as if one of the dimensions of the grid is 0, the grid does not exist
     if m == 0 or n == 0:
         return 0
+
+    #storing newly computed grid dimension and returning
+    #this solution deals with breaking down the problem into smaller grids until a base case is reached
     memo[key] = gridTraveler2(m - 1, n) + gridTraveler2(m, n-1)
     return memo[key]
 
